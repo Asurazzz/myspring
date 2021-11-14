@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd
+      ">
+
+    <bean id="customer" class="com.ymj.spring03.selfEditor.Customer">
+        <property name="name" value="yemingjie"></property>
+        <property name="address" value="安徽省_池州市_贵池区"></property>
+    </bean>
+
+<!--    <bean class="org.springframework.beans.factory.config.CustomEditorConfigurer">-->
+<!--        <property name="propertyEditorRegistrars">-->
+
+<!--            &lt;!&ndash;         private PropertyEditorRegistrar[] propertyEditorRegistrars;是一个数组，所以要加list或者array-->
+<!--                        属性必须要对应上才可以解析-->
+<!--              &ndash;&gt;-->
+<!--            <list>-->
+<!--                <bean class="com.ymj.spring03.selfEditor.AddressPropertyEditorRegistrar"></bean>-->
+<!--            </list>-->
+<!--        </property>-->
+<!--    </bean>-->
+
+    <bean class="org.springframework.beans.factory.config.CustomEditorConfigurer">
+        <property name="customEditors">
+            <map>
+                <entry key="com.ymj.spring03.selfEditor.Address">
+                    <value>com.ymj.spring03.selfEditor.AddressPropertyEditor</value>
+                </entry>
+            </map>
+        </property>
+    </bean>
+
+
+</beans>

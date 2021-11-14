@@ -10,7 +10,7 @@
 <!--    <bean class="org.springframework.beans.factory.config.CustomEditorConfigurer">-->
 <!--        <property name="propertyEditorRegistrars">-->
 <!--            <list>-->
-<!--                <bean class="com.mashibing.selfEditor.AddressPropertyEditorRegistrar"></bean>-->
+<!--                <bean class="com.mashibing.selfEditor.xml.AddressPropertyEditorRegistrar"></bean>-->
 <!--            </list>-->
 <!--        </property>-->
 <!--    </bean>-->
