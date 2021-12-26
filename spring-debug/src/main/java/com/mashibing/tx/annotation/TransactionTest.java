@@ -10,6 +10,7 @@ public class TransactionTest {
         AnnotationConfigApplicationContext applicationContext = new AnnotationConfigApplicationContext();
         applicationContext.register(TransactionConfig.class);
         applicationContext.refresh();
+
 //        BookService bean = applicationContext.getBean(BookService.class);
 //        bean.checkout("zhangsan",1);
         BookDao bean = applicationContext.getBean(BookDao.class);
