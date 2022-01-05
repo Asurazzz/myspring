@@ -26,9 +26,9 @@ public class BookService {
         } catch (Exception e) {
             e.printStackTrace();
         }
-//        for (int i = 1 ;i>=0 ;i--)
-//            System.out.println(10/i);
-//        int price = bookDao.getPrice(id);
-//        bookDao.updateBalance(username,price);
+        for (int i = 1 ;i>=0 ;i--)
+            System.out.println(10/i);
+        int price = bookDao.getPrice(id);
+        bookDao.updateBalance(username,price);
     }
 }
