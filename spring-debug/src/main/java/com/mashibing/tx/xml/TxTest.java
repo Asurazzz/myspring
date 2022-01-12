@@ -7,7 +7,9 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import java.sql.SQLException;
 
-// 把xml配置的方式准备对象的过程画一个流程图出来
+/**
+ * 把xml配置的方式准备对象的过程画一个流程图出来
+ */
 public class TxTest {
     public static void main(String[] args) throws SQLException {
         System.setProperty(DebuggingClassWriter.DEBUG_LOCATION_PROPERTY,"d:\\code");
